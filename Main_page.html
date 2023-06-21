@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таргетолог👨‍💻</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="icon_site.ico" type="image/ico">
+  </head>
+  <body>
+    
+  <div class="main">
+  <div class = "left_column">
+    <img class="myphoto" src="myphoto.png" alt="Помилка завантаження фото😔">
+          <p class="name"><b>Данило Довгалюк</b></p>
+          <p class="work" style="color: gray">Таргетолог👨‍💻</p>
+          <p class="work" style="color: gray">Веб-розробник👨‍💻</p>
+         <br><a href="https://www.facebook.com/profile.php?id=100093318625577" target="_blank"><img class="social"  src="facebook.png"></a>
+         <a href="https://www.instagram.com/daniil_dovgalyuk/" target="_blank"><img class="social"  src="insta.png"></a>
+         <a href="https://t.me/Anywaytobytheway" target="_blank"><img class="social"  src="telega.png"></a>
+
+
+         <div class="info">
+            <p><img src="calendar.png" class="Info"> February 15, 2003</p>
+            <p><img src="location.png" class="Info"> Kyiv, Ukraine</p>
+            <p onclick="copyToClipboard('profarb23348@gmail.com')"><img src="envelope.png" class="Info">profarb23348@gmail.com</p>
+            <p onclick="copyToClipboard('@Anywaytobytheway')"><img src="telegram.png" class="Info"> @Anywaytobytheway</p>
+           </div>
+           <button id="pricebtn" class="pricebtn" onclick="openMenu()">Переглянути прайс лист</button>
+  </div>
+  </div>
+
+  <div id="menu" class="menu" onclick="closeMenu(event)">
+    <span class="close">&times;</span>
+    
+    Створення Чат-бота🦾 - від 150$;
+    <br>
+    <br>
+    Послуги Трафіколога - від 250$;
+    <br>
+    <br>
+    Консультація - безкоштовно;
+    <br>
+    <br>
+    Аналіз веб-сайту🖥 - безкоштовно;
+    <br>
+    <br>
+    Створення веб-сайту - від 150$;
+  </div>
+
+  <div id="notification" class="notification hide">
+    <p id="notificationText"></p>
+  </div>
+
+  <div>
+    
+    <div>
+        <span class="title">Про мене</span>
+        <br><img src="line.png"  class="line">
+          <div class="text">
+              <p>Я спеціаліст, який займається аналізом, управлінням та оптимізацією трафіку з метою привести якомога більше клієнтів для Вашого бізнесу.
+                Також я займаюся створенням чат-ботів для телеграму та веб-сайту "під ключ". 
+        <br>
+        <br>Отже, моя основна робота полягає у налаштуванні реклами для вашого Інтернет магазину/Сайту/Сторінки Фейсбук чи Інстаграм для привернення цільової аудиторії.
+       </p>
+          </div>
+            <p class="wid">Чим я займаюся та чому саме я?🤨</p>
+          </div>
+          
+         <div class="bot">
+             <div class="block">
+            <br>
+            <img src="chat_bot.png" class="botom">
+            <h3 class="Title1">Чат-бот🤖</h3>
+          <p class="txt">
+            Маю досвід розробки чат-ботів для Telegram.<br>
+            Завжди ставлю інтереси клієнтів на перше місце і працюю над кожним проектом індивідуально
+        
+          </p>
+        </div>
+
+        <div class="block">
+       <br>
+       <img src="web-development.png" class="botom">
+       <h3 class="Title1">Веб-розробка👨‍💻</h3>
+     <p class="txt">
+         Якісна розробка сайтів з привабливим та сучасним мінімалістичним дизайном. <br>
+         <br>
+          
+     </p>
+        </div>
+     
+        <div class="block">
+     <br>
+     <img src="traffick.png" class="botom">
+     <h3 class="Title1">Трафіколог</h3>
+     <p class="txt">
+       Створю потужну рекламну кампанію яка приведе необхідну кількість клієнтів/відвідувачів. <br>
+       <br>
+      Орієнтуюся на результат, готовий надавати щоденну аналітику та звіт про рекламу<br>
+     </p>
+     </div>
+     
+     <div class="block">
+        <br>
+        <img src="support.png" class="botom">
+        <h3 class="Title1">Зворотній зв'язок</h3>
+        <p class="txt">
+            Я забезпечую ефективну комунікацію з клієнтами, що дозволяє налагодити роботу 
+            і забезпечити успішне завершення проекту <br>
+            <br>
+            Завжди на зв'язку, надаю підтримку навіть після завершення проекту <br>
+       </p>
+    </div>
+   </div>
+   <div class="center">
+   <button class="form_btn" onclick="openForm()">Заповнити форму</button>
+</div>
+</div>
+   <div id="form" class="form-container">
+    <span class="close-form" onclick="closeForm()">&times;</span>
+    <br>
+    <h2>Заповніть форму</h2>
+    <form>
+       <div class="form-group">
+          <label for="name">Ваш ПІБ:</label>
+          <input type="text" id="name" name="name" required>
+       </div>
+       <div class="form-group">
+          <label for="contact">Напишіть свій нікнейм в телеграмі або номер телефону</label>
+          <input type="text" id="contact" name="contact" required>
+       </div>
+       <div class="form-group">
+          <label>Перелік послуг:</label>
+          <div class="checkbox-group">
+             <label><input type="checkbox" name="services" value="Створення Чат-бота">   <span class="checkbox-custom"></span>Створення Чат-бота (від 150$)</label>
+             <label><input type="checkbox" name="services" value="Послуги Трафіколога">   <span class="checkbox-custom"></span>Послуги Трафіколога (від 250$)</label>
+             <label><input type="checkbox" name="services" value="Консультація">   <span class="checkbox-custom"></span>Консультація (Безкоштовно)</label>
+             <label><input type="checkbox" name="services" value="Аналіз веб-сайту">   <span class="checkbox-custom"></span>Аналіз веб-сайту (Безкоштовно)</label>
+             <label><input type="checkbox" name="services" value="Створення веб-сайту">   <span class="checkbox-custom"></span>Створення веб-сайту (від 150$)</label>
+          </div>
+       </div>
+       <div class="form-group">
+          <label for="additional-info">Додаткова інформація:</label>
+          <textarea id="additional-info" name="additional-info" rows="4" style="resize: none;" placeholder="Поясніть, що саме Вам потрібно, побажання, дедлайни і т.д."></textarea>
+          <span class="optional-text">Це поле необов'язкове<span class="superscript">*</span></span>
+       </div>
+       <div class="form-group">
+          <input type="submit" value="Відправити" class="submit-btn">
+       </div>
+    </form>
+ </div>
+ 
+
+
+
+</div>
+
+
+</div>
+
+    
+<script src="index.js"></script>
+
+  </script>
+  </script>
+  </body>
+</html>
